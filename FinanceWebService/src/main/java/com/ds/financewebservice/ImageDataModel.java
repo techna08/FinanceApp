@@ -33,7 +33,7 @@ public class ImageDataModel {
             parameter.put("q", company + " shares logo");
             parameter.put("tbm", "isch");
             parameter.put("ijn", "0");
-            parameter.put("api_key", "764f1bff140127c418720c73289e326577d782e93c4bc325d725e14989f01f52");
+            parameter.put("api_key", <Your API Key>);
             long start=System.currentTimeMillis();
             log.enterData("Search Parameter for image API is " + parameter ,System.currentTimeMillis());
             logger.info("Search Parameter for image API is " + parameter);
