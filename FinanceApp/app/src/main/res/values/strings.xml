@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Finance App</string>
+    <string name="hello">Type the Company\'s Stock name.\n Example: AAPL for Apple</string>
+    <string name="action_settings">Action</string>
+</resources>

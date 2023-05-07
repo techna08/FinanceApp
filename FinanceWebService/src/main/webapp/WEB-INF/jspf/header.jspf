@@ -1,0 +1,15 @@
+<%--===========================================================================
+Header (top area).
+===========================================================================--%>
+<header>
+    <div class="title">${title}</div>
+    <nav>
+        <div class="nav-bar">
+            <ul class="nav-menu">
+                <li><a href="${pageContext.request.contextPath}/">Home</a></li>
+                <li><a href="${pageContext.request.contextPath}/dashboard?command=logs">Logs</a></li>
+                <li><a href="${pageContext.request.contextPath}/dashboard?command=analytics">Analytics</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>

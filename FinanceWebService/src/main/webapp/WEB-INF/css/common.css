@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0 10%;
+    background-color: #FBFACD;
+}
+
+.page {
+    background-color: papayawhip;
+    background-size: cover;
+    border-radius: 50px 50px 0 0;
+    min-height: 100vh;
+    max-height: inherit;
+}
+
+.title {
+    border-radius: 50px 50px 0 0;
+    text-align: center;
+    font-size: 4rem;
+    font-family: cataneo Bt;
+    color: white;
+}
+
+.nav-menu, .title {
+    background-color: #BA94D1;
+    display: flex;
+    justify-content: center;
+}
+
+header  {
+    overflow: hidden;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 80%;
+}
+
+.nav-menu li {
+    /*box-shadow: 0 0 0 0.1rem lightslategrey;*/
+    border-radius: 12px;
+    margin: 2% 0.5%;
+    list-style-type: none;
+    background-color: white;
+}
+
+.nav-menu li a {
+    display: block;
+    color: purple;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover {
+    font-size: 2.1em;
+    border: 0.2rem greenyellow solid;
+    border-radius: 12px;
+}
+
+.content {
+    margin-top: 7%;
+    background-size: cover;
+    padding: 10% 0;
+}
+
+.logs {
+    margin: 0 10%;
+}
+
+.logs_table td, .logs_table th {
+    background-color: #DEBACE;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.logs_table th {
+    font-size: 1.6em;
+    width: 15%;
+}
+
+.logs_table td {
+    margin: 2%;
+    text-align: left;
+}
+
+.log {
+    width: 75%;
+}
+
+.content p {
+    font-size: 1.5em;
+}
+
+.statistics {
+    margin: 3% 5%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 5%;
+}
+
+.stat_table {
+    margin: 0;
+}
+
+.stat_table table, th, td {
+    border:1px solid black;
+    background-color: white;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+td pre {
+    width: 100%;
+}
+
+.log span {
+    border: 0.1rem solid green;
+    box-shadow: 0 0 0 0.01rem black;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    display: block;
+    padding: 2%;
+
+    background-color: darkblue;
+    color: white;
+}
+
+/***************************************************************
+Style for the ERROR message
+***************************************************************/
+.error {
+    font-size: large;
+    color: rgb(204, 0, 0);
+}
