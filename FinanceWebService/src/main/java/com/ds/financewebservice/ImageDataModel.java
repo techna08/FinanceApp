@@ -67,7 +67,7 @@ public class ImageDataModel {
     private void addImageApiResponseTime(long l, LogIntoMongo log) {
         log.enterData("Calculating new Average for Image API Response Time  " , System.currentTimeMillis());
         logger.info("Calculating new Average for Image API Response Time  " );
-        ConnectionString connectionString = new ConnectionString("mongodb://Aaru_Mongo:Mongo1212@ac-uir8d9f-shard-00-00.mqfu6qw.mongodb.net:27017,ac-uir8d9f-shard-00-01.mqfu6qw.mongodb.net:27017,ac-uir8d9f-shard-00-02.mqfu6qw.mongodb.net:27017/test?w=majority&retryWrites=true&tls=true&authMechanism=SCRAM-SHA-1");
+        ConnectionString connectionString = new ConnectionString(<Your connection string>);
         MongoClientSettings settings = MongoClientSettings.builder()
                 .applyConnectionString(connectionString)
                 .serverApi(ServerApi.builder()
