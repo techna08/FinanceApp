@@ -27,7 +27,7 @@ public class FinanceDataModel {
         try{
             log.enterData("Working to fulfill Finance Request for " +company, System.currentTimeMillis());
             logger.info("Working to fulfill Finance Request for " +company);
-            String url="https://financialmodelingprep.com/api/v3/income-statement/" + company +"?limit=120&apikey=f2cecf29f8398bcd0f416409f2cf0cf8";
+            String url="https://financialmodelingprep.com/api/v3/income-statement/" + company +"?limit=120&apikey=<APIKEY>";
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(URI.create(url))
                     .method("GET", HttpRequest.BodyPublishers.noBody())
@@ -70,7 +70,7 @@ public class FinanceDataModel {
         logger.info("Updating Highest Numbers for " +company);
         MongoClient mongoClient = null;
         try{
-            ConnectionString connectionString = new ConnectionString("mongodb://Aaru_Mongo:Mongo1212@ac-uir8d9f-shard-00-00.mqfu6qw.mongodb.net:27017,ac-uir8d9f-shard-00-01.mqfu6qw.mongodb.net:27017,ac-uir8d9f-shard-00-02.mqfu6qw.mongodb.net:27017/test?w=majority&retryWrites=true&tls=true&authMechanism=SCRAM-SHA-1");
+            ConnectionString connectionString = new ConnectionString(<YourCOnnectionString>);
             MongoClientSettings settings = MongoClientSettings.builder()
                     .applyConnectionString(connectionString)
                     .serverApi(ServerApi.builder()
@@ -159,7 +159,7 @@ public class FinanceDataModel {
         logger.info("Adding to searched list for  " +company);
         MongoClient mongoClient = null;
         try{
-            ConnectionString connectionString = new ConnectionString("mongodb://Aaru_Mongo:Mongo1212@ac-uir8d9f-shard-00-00.mqfu6qw.mongodb.net:27017,ac-uir8d9f-shard-00-01.mqfu6qw.mongodb.net:27017,ac-uir8d9f-shard-00-02.mqfu6qw.mongodb.net:27017/test?w=majority&retryWrites=true&tls=true&authMechanism=SCRAM-SHA-1");
+            ConnectionString connectionString = new ConnectionString(<Yourconnectionstring>);
             MongoClientSettings settings = MongoClientSettings.builder()
                     .applyConnectionString(connectionString)
                     .serverApi(ServerApi.builder()
@@ -192,7 +192,7 @@ public class FinanceDataModel {
         logger.info("Calculating new Average for Finance API Response Time  " );
         MongoClient mongoClient=null;
         try{
-            ConnectionString connectionString = new ConnectionString("mongodb://Aaru_Mongo:Mongo1212@ac-uir8d9f-shard-00-00.mqfu6qw.mongodb.net:27017,ac-uir8d9f-shard-00-01.mqfu6qw.mongodb.net:27017,ac-uir8d9f-shard-00-02.mqfu6qw.mongodb.net:27017/test?w=majority&retryWrites=true&tls=true&authMechanism=SCRAM-SHA-1");
+            ConnectionString connectionString = new ConnectionString(<Yourconnectionstring>);
             MongoClientSettings settings = MongoClientSettings.builder()
                     .applyConnectionString(connectionString)
                     .serverApi(ServerApi.builder()
